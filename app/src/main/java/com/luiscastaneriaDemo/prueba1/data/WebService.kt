@@ -1,11 +1,10 @@
 package com.luiscastaneriaDemo.prueba1.data
 
-import com.luiscastaneriaDemo.prueba1.core.Resource
-import com.luiscastaneriaDemo.prueba1.model.PhoneListModel
 import com.luiscastaneriaDemo.prueba1.model.PhoneListModelItem
 import com.luiscastaneriaDemo.prueba1.model.deviceModel
-import retrofit2.Response
-import retrofit2.http.*
+import retrofit2.http.GET
+import retrofit2.http.Headers
+import retrofit2.http.Url
 
 interface WebService {
     @Headers("Accept: application/json")

@@ -15,6 +15,7 @@ import com.luiscastaneriaDemo.prueba1.R
 import com.luiscastaneriaDemo.prueba1.adapter.DetailPhoneAdapter
 import com.luiscastaneriaDemo.prueba1.adapter.MainAdapter
 import com.luiscastaneriaDemo.prueba1.adapter.NewDetailAdapter
+import com.luiscastaneriaDemo.prueba1.core.RetrofitClient.getRetrofit
 import com.luiscastaneriaDemo.prueba1.data.RepoImplement
 import com.luiscastaneriaDemo.prueba1.core.VMFactoy
 import com.luiscastaneriaDemo.prueba1.databinding.FragmentPhoneListBinding
@@ -84,12 +85,7 @@ class PhoneListFragment : Fragment(R.layout.fragment_phone_list), MainAdapter.On
 
     }
 
-    private fun getRetrofit(): Retrofit {
-        return Retrofit.Builder()
-            .baseUrl("https://61967289af46280017e7e0c0.mockapi.io/devices/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-    }
+
 
 
     private suspend fun searchByName(query: String) {

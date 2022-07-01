@@ -22,6 +22,12 @@ object RetrofitClient {
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .build().create(WebService::class.java)
     }
+     fun getRetrofit(): Retrofit {
+        return Retrofit.Builder()
+            .baseUrl("https://61967289af46280017e7e0c0.mockapi.io/devices/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+    }
 
 
 }
