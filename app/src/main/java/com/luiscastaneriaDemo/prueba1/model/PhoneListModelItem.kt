@@ -1,0 +1,55 @@
+package com.luiscastaneriaDemo.prueba1.model
+
+import android.os.Parcel
+import android.os.Parcelable
+
+
+data class PhoneListModelItem(
+    val bottomDecorator: BottomDecorator?,
+    val bottomTag: String?,
+    val brand: String?,
+    val chargeCode: String?,
+    val codeNMU: String?,
+    val collections: List<String>?,
+    val color: Color?,
+    val cybermonday: Boolean?,
+    val deviceStorage: String?,
+    val discountTag: String?,
+    val externalStorage: String?,
+    val featureImage: Any?,
+    val featureTitle: String?,
+    val href: String?,
+    val id: String?,
+    val images: ArrayList<Image>?,
+    val installments: Int?,
+    val installmentsTag: String?,
+    val installmentsTagAmount: String?,
+    val internalStorage: String?,
+    val legal: String?,
+    val mainCamera: String?,
+    val mainImage: MainImage?,
+    val manufacture: String?,
+    val model: String?,
+    val name: String?,
+    val priority: Int?,
+    val processor: String?,
+    val productNumber: String?,
+    val published_at: String?,
+    val refurbished: Boolean?,
+    val screenSize: Double?,
+    val screenType: String?,
+    val secondaryCamera: String?,
+    val seoDescription: String?,
+    val slug: String?,
+    val sourceSystemName: String?,
+    val taxIncludeAmount: Int?,
+    val taxIncludedChargeAmount: Int?,
+    val taxIncludedSellingPrice: Int?,
+    val topDecorator: Any?,
+    val topTag: String?,
+    val type: String?,
+    val unpublishedByUser: Any?,
+    val version: String?,
+    val videoUrl: String?
+)
+

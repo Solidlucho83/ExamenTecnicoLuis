@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Phone_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        card_view:cardBackgroundColor="#D0D0DC"
+
+        card_view:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvNamePhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:text="name" />
+
+                        <TextView
+                            android:id="@+id/tvinstallmentTag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#E91E63"
+                            android:textSize="16sp"
+                            android:textStyle="italic"
+                            tools:text="installmentTag" />
+
+                        <TextView
+                            android:id="@+id/tvlegales"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#455A64"
+                            android:textSize="12sp"
+                            tools:text="topTag" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imCoverPhone"
+                            android:layout_width="160dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="5dp"
+                            android:clipToPadding="true"
+                            android:contentDescription="@string/todo"
+                            android:scaleType="center"
+                            tools:ignore="ImageContrastCheck"
+                            tools:text="Cover Game" />
+
+                        <ImageView
+                            android:id="@+id/imCoverPhone2"
+                            android:layout_width="160dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:clipToPadding="true"
+                            android:contentDescription="@string/todo"
+                            android:scaleType="center"
+                            tools:ignore="ImageContrastCheck"
+                            tools:text="Cover Game" />
+
+                        <ImageView
+                            android:id="@+id/imCoverPhone3"
+                            android:layout_width="160dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:clipToPadding="true"
+                            android:contentDescription="@string/todo"
+                            android:scaleType="center"
+                            tools:ignore="ImageContrastCheck"
+                            tools:text="Cover Game" />
+
+                        <ImageView
+                            android:id="@+id/imCoverPhone4"
+                            android:layout_width="160dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:clipToPadding="true"
+                            android:contentDescription="@string/todo"
+                            android:scaleType="center"
+                            tools:ignore="ImageContrastCheck"
+                            tools:text="Cover Game" />
+
+                        <ImageView
+                            android:id="@+id/imCoverPhone5"
+                            android:layout_width="160dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:clipToPadding="true"
+                            android:contentDescription="@string/todo"
+                            android:scaleType="center"
+                            tools:ignore="ImageContrastCheck"
+                            tools:text="Cover Game" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
